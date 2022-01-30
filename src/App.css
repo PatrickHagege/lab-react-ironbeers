@@ -13,21 +13,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +20,181 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/*************************** HEADER ****************************/
+
+nav {
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  
+}
+
+nav a {
+  color:white;
+  background-color:rgb(103,193,247);
+  padding:1.45rem;
+  border:1px solid white;
+  border-top:none;
+  border-bottom:none;
+}
+
+/*************************** HEADER ****************************/
+
+#header {
+  height:4rem;
+  background-color:rgb(103,193,247);
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  text-align: center;
+  margin-bottom:1.5rem;
+}
+
+.fa-home {
+  font-size:2.5rem;
+  color:white;
+}
+
+/*************************** BEER LIST ****************************/
+
+div#beerlist-container  {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  
+}
+
+a {
+  display:flex;
+  width:100vw;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-decoration:none;
+  border-bottom:1px solid #bbb;
+}
+
+article#beer-list-article   {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  align-items:center;
+  height:20rem;
+  color:black;
+  width:90vw;
+}
+
+div#beer-list-article-image-container  {
+  width:35vw;
+}
+
+article#beer-list-article img  {
+  height:17rem;
+}
+
+section#beer-list-infos {
+  display:flex;
+  flex-direction:column;
+  text-align:left;
+  justify-content:space-around;
+  height:17rem;
+  width:55vw;
+}
+
+h2  {
+  font-size:2.5rem;
+  font-weight:300;
+}
+
+
+h3  {
+  font-size:1.25rem;
+  color:#bbb;
+}
+
+section#beer-list-infos span  {
+  font-weight:700;
+}
+
+/*************************** SINGLE BEER ****************************/
+
+div#single-beer-container {
+  display:flex;
+  flex-direction:column;
+  align-items:space-between;
+}
+
+section#single-beer-image-container {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+section#single-beer-image-container img {
+  height:20rem;
+}
+
+section#single-beer-infos {
+  width:90vw;
+  margin:auto;
+}
+
+section#name-and-attenuation-level, section#tagline-and-first-brewed  {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  height:3rem;
+}
+
+#name-and-attenuation-level  span{
+  font-size:1.5rem;
+  color:#bbb;
+}
+
+#tagline-and-first-brewed span{
+  font-size:.9rem;
+  font-weight:800;
+}
+
+section#single-beer-description {
+  font-size:1.2rem;
+  text-align:left;
+  font-weight:700;
+}
+
+/*************************** NEW BEER ****************************/
+
+form  {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+label {
+  padding:.5rem 0;
+  width:60%;
+  text-transform:uppercase;
+  font-weight:bold;
+  text-align:left;
+}
+
+input {
+  width:60%;
+  padding:.5rem;
+  margin: .5rem;
+}
+
+button  {
+  background-color:rgb(103,193,247);
+  border-radius:1rem;
+  border:none;
+  color:white;
+  padding:1rem;
+  text-transform:uppercase;
+  font-size:1.15rem;
+  margin-top:.5rem;
 }
