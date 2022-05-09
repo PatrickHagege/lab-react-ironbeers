@@ -5,7 +5,6 @@ import { useState } from 'react';
 import axios from 'axios';
 
 function NewBeer() {
-    // const [newBeer, setNewBeer] = ({});
     const [name, setName] = useState("");
     const [tagline, setTagline] = useState("");
     const [description, setDescription] = useState("");
@@ -23,7 +22,6 @@ function NewBeer() {
         )
             .then((function (apiResponse) {
                 console.log(name, tagline, description, first_brewed, brewers_tips, attenuation_level, contributed_by);
-                // setNewBeer(newBeer)
                 console.log(apiResponse);
             }))
             .catch(err => console.log(err));
