@@ -17,6 +17,7 @@ function SingleBeer({ beers }) {
                 setBeer(data);
             })
             .catch((e) => console.log(e));
+        // eslint-disable-next-line
     }, [beerId]);
     return (
         <>

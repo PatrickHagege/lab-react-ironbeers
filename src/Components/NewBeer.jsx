@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from './Header';
 
-import { useState } from 'react';
-import axios from 'axios';
+// import { useState } from 'react';
+// import axios from 'axios';
 
 function NewBeer({body}) {
     /*

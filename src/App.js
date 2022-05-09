@@ -16,28 +16,29 @@ function App() {
   const [beers, setBeers] = useState([]);
 
   const addBeer = (beer) => {
-		setBeers([...beers, beer]);
-	};
+    setBeers([...beers, beer]);
+  };
 
-    useEffect(() => {
-        axios
-            .get('https://ih-beers-api2.herokuapp.com/beers')
-            .then(({ data }) => {
-                //console.log(response.data);
-                setBeers(data);
-            })
-            .catch((e) => console.log(e));
-    }, []);
-    //console.log(beers)
+  useEffect(() => {
+    axios
+      .get('https://ih-beers-api2.herokuapp.com/beers')
+      .then(({ data }) => {
+        //console.log(response.data);
+        setBeers(data);
+      })
+      .catch((e) => console.log(e));
+    // eslint-disable-next-line
+  }, []);
+  //console.log(beers)
   return (
     <div className="App">
       <Routes>
-				<Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/beers/:beerId" element={<SingleBeer beers={beers} />} />
-				<Route path="/beers" element={<Beers beers={beers} />} />
-				<Route path="/random-beer" element={<RandomBeer beers={beers} />} />
-        {/* <Route path="/new-beer" element={<NewBeer beers={beers} addBeer={addBeer}/>} /> */}
-			</Routes>
+        <Route path="/beers" element={<Beers beers={beers} />} />
+        <Route path="/random-beer" element={<RandomBeer />} />
+        <Route path="/new-beer" element={<NewBeer beers={beers} addBeer={addBeer}/>} />
+      </Routes>
     </div>
   );
 }
