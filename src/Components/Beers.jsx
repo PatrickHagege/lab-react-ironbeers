@@ -8,7 +8,6 @@ function Beers(props) {
     const { beers } = props;
     const [search, setSearch] = useState('')
     const [searchResults, setSearchResults] = useState([]);
-    //console.log("beers", beers);
 
     useEffect(() => {
         axios.get(`https://ih-beers-api2.herokuapp.com/beers/search?q=${search}`)
