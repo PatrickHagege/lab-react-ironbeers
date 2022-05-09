@@ -38,6 +38,7 @@ function SingleBeer({ beers }) {
                     <section id='single-beer-description'>
                         <p>{beer.description}</p>
                     </section>
+                    <section id='contributed_by'>{beer.contributed_by}</section>
                 </section>
             </div>
         </>

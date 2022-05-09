@@ -36,6 +36,7 @@ function RandomBeer() {
                     <section id='single-beer-description'>
                         <p>{randomBeer.description}</p>
                     </section>
+                    <section id='contributed_by'>{randomBeer.contributed_by}</section>
                 </section>
             </div>
         </div>);

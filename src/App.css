@@ -146,10 +146,12 @@ section#single-beer-image-container {
 
 section#single-beer-image-container img {
   height:20rem;
+  margin:1rem auto;
 }
 
 section#single-beer-infos {
-  width:90vw;
+  width:98vw;
+  max-width:800px;
   margin:auto;
 }
 
@@ -175,6 +177,12 @@ section#single-beer-description {
   font-size:1.2rem;
   text-align:left;
   font-weight:700;
+}
+
+#contributed_by {
+  width:100%;
+  font-size:.85rem;
+  text-align:left;
 }
 
 /*************************** NEW BEER ****************************/
